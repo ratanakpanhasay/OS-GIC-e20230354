@@ -1,4 +1,4 @@
-kvm
-Hypervisor vendor:                       KVM
-7.0.0-38-generic
-i4gic-os
+wsl
+Hypervisor vendor:                       Microsoft
+6.18.54.1-microsoft-standard-WSL2
+PanhaSay
