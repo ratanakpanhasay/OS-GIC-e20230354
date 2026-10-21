@@ -1,0 +1,25 @@
+
+Task 3: System Call Tracing Commands
+
+1. Trace library file creator:
+strace -e trace=openat,read,write,close ../task1/file_creator_lib 2> strace_lib_task1.txt
+
+2. Trace system-call file creator:
+strace -e trace=openat,read,write,close ../task1/file_creator_sys 2> strace_sys_task1.txt
+
+3. Trace library file reader:
+strace -e trace=openat,read,write,close ../task1/file_reader_lib 2> strace_lib_reader.txt
+
+4. Trace system-call file reader:
+strace -e trace=openat,read,write,close ../task1/file_reader_sys 2> strace_sys_reader.txt
+
+5. Summarize library file creator system calls:
+strace -c ../task1/file_creator_lib 2> strace_summary_lib.txt
+
+6. Summarize system-call file creator system calls:
+strace -c ../task1/file_creator_sys 2> strace_summary_sys.txt
+7. Compare total system-call counts:
+grep "total" strace_summary_lib.txt strace_summary_sys.txt
+
+8. List the recorded trace files:
+ls -l strace_*.txt command_used_strace.txt
