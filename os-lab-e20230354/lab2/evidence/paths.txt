@@ -1,0 +1,6 @@
+cat "../../reports/$file1"
+cat "$OSLAB_WORKSPACE/lab2/reports/$file1"
+Error: cat: 'reports/cash flow.txt': No such file or directory
+Fix: ../../reports/cash flow.txt
+Relative path: ../../reports/cash flow.txt
+Absolute path: /home/gic-say-ratanakpanha/oslab-work/lab2/reports/cash flow.txt
