@@ -1,0 +1,25 @@
+  717  pwd
+  718  nano shm-producer.c
+  719  nano shm-consumer.c
+  720  ls -lh
+  721  gcc -Wall -Wextra -o shm-producer shm-producer.c -lrt
+  722  gcc -Wall -Wextra -o shm-consumer shm-consumer.c -lrt
+  723  ./shm-producer
+  724  ./shm-consumer > result-shm-ipc.txt
+  725  cat result-shm-ipc.txt
+  726  history | tail -n 20 > command_used_shm.txt
+  727  ls -lh
+  728  cd ~/os-gic-e20230354/os-class-activities-e20230354/activity2/task4_mq
+  729  pwd
+  730  nano common.h
+  731  nano sender.c
+  732  ls -lh
+  733  nano receiver.c
+  734  ls -lh
+  735  gcc -Wall -Wextra -o sender sender.c -lrt
+  736  gcc -Wall -Wextra -o receiver receiver.c -lrt
+  737  ./sender
+  738  ./receiver
+  739  ./sender > result-sender.txt
+  740  ./receiver > result-receiver.txt
+  741  history | tail -n 25 > command_used_mq.txt

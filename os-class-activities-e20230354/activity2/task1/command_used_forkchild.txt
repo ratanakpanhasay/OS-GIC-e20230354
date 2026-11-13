@@ -1,0 +1,20 @@
+  570  ln -s renamed.txt soft.txt
+  571  readlink soft.txt
+  572  cat soft.txt
+  573  {     ls -li renamed.txt hard.txt soft.txt;     readlink soft.txt;     cat hard.txt soft.txt; } | tee -a ../evidence/links.txt
+  574  printf 'version 2\n' > source.txt
+  575  { ls -li source.txt hard.txt; cat source.txt hard.txt; } | tee ../evidence/replacement.txt
+  576  cd ~/oslab-work/lab3
+  577  cat evidence/links.txt
+  578  cat evidence/replacement.txt
+  579  ls -lh evidence/
+  580  check lab3
+  581  oslab check lab3
+  582  nano ~/os-gic-e20230354/os-lab-e20230354/lab3/README.md
+  583  rm -f ~/os-gic-e20230354/os-lab-e20230354/lab3/README.md
+  584  rm -f /tmp/lab3-readme.md
+  585  cd ~/os-gic-e20230354/os-class-activities-e20230354/activity2/task1
+  586  ./forkchild
+  587  ./forkchild > result_forkchild.txt 2>&1
+  588  cat result_forkchild.txt
+  589  history | tail -n 20 > command_used_forkchild.txt

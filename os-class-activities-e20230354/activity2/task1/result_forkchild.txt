@@ -1,0 +1,13 @@
+Parent process (PID: 1992553) — creating child...
+Parent: waiting for child (PID: 1992554) to finish...
+Child process (PID: 1992554, Parent PID: 1992553)
+Child: sleeping 30s — observe the process tree now!
+total 40
+drwxrwxr-x 2 gic-say-ratanakpanha gic-say-ratanakpanha  4096 Nov 11 20:41 .
+drwxrwxr-x 7 gic-say-ratanakpanha gic-say-ratanakpanha  4096 Oct 28 09:56 ..
+-rwxrwxr-x 1 gic-say-ratanakpanha gic-say-ratanakpanha 16480 Nov 11 20:32 forkchild
+-rw------- 1 gic-say-ratanakpanha gic-say-ratanakpanha  1327 Nov 11 20:32 forkchild.c
+-rw------- 1 gic-say-ratanakpanha gic-say-ratanakpanha  1330 Oct 28 09:59 forkchild.c.save
+-rw-rw-r-- 1 gic-say-ratanakpanha gic-say-ratanakpanha   210 Nov 11 20:41 result_forkchild.txt
+Parent: child exited with status 0
+Parent: done.

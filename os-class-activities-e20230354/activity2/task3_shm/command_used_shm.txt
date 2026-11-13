@@ -1,0 +1,20 @@
+  707  git status
+  708  git push origin main
+  709  git status
+  710  cd ~/os-gic-e20230354/os-class-activities-e20230354/activity2
+  711  ls -lh task2/
+  712  ls -lh screenshots/
+  713  cd ~/os-gic-e20230354/os-class-activities-e20230354/activity2
+  714  ls -lh task2/
+  715  ls -lh screenshots/
+  716  cd ~/os-gic-e20230354/os-class-activities-e20230354/activity2/task3_shm
+  717  pwd
+  718  nano shm-producer.c
+  719  nano shm-consumer.c
+  720  ls -lh
+  721  gcc -Wall -Wextra -o shm-producer shm-producer.c -lrt
+  722  gcc -Wall -Wextra -o shm-consumer shm-consumer.c -lrt
+  723  ./shm-producer
+  724  ./shm-consumer > result-shm-ipc.txt
+  725  cat result-shm-ipc.txt
+  726  history | tail -n 20 > command_used_shm.txt
