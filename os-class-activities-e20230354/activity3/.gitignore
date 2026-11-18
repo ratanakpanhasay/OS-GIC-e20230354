@@ -1,0 +1,12 @@
+# Task 1 compiled executables
+/task1_socket/server
+/task1_socket/client
+
+# Task 2 compiled executables
+/task2_threads/threads
+/task2_threads/threads_mutex
+/task2_threads/threads_no_join
+/task2_threads/threads_observe
+
+# Java compiled files
+*.class

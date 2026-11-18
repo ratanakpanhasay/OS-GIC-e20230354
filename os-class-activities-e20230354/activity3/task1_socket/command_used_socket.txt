@@ -1,0 +1,20 @@
+  798  git status --short
+  799  cd ~/os-gic-e20230354/os-class-activities-e20230354/activity2
+  800  python3 -c 'p="README.md"; s=open(p).read(); s=s.replace("\\(", "(").replace("\\)", ")"); open(p,"w").write(s)'
+  801  grep -n 'screenshots/' README.md
+  802  cd ~/os-gic-e20230354
+  803  git add os-class-activities-e20230354/activity2/README.md
+  804  git diff --cached --check
+  805  git status --short
+  806  git commit -m "Add Operating Systems Class Activity 2"
+  807  git push origin main
+  808  git status
+  809  cd ~/os-gic-e20230354/os-class-activities-e20230354/activity3/task1_socket
+  810  ./client
+  811  ./server > result_server.txt 2>&1 &
+  812  sleep 1
+  813  ./client > result_client.txt 2>&1
+  814  wait
+  815  cat result_server.txt result_client.txt > result_socket.txt
+  816  cat result_socket.txt
+  817  history | tail -n 20 > command_used_socket.txt

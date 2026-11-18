@@ -1,0 +1,30 @@
+mkdir -p ~/os-activity3/task3_java\ncd ~/os-activity3/task3_java\npwd
+ssh gic-say-ratanakpanha@ssh2.rathpisey.site
+cloudflared --version
+brew --version
+brew install cloudflared
+cloudflared --version
+ssh i4gic-os
+ls -la ~/.ssh
+cat ~/.ssh/config
+nano ~/.ssh/config
+gic
+ssh gic-say-ratanakpanha@ssh2.rathpisey.site
+ssh gic-say-ratanakpanha@ssh2.rathpisey.site
+nano ~/.ssh/config
+chmod 600 ~/.ssh/config
+ssh gic-say-ratanakpanha@ssh2.rathpisey.site
+cd ~/os-activity3/task3_java
+cd ~/os-activity3/task3_java\npwd\nls -la
+nano ThreadDemo.java
+ls -l ThreadDemo.java
+javac ThreadDemo.java
+java ThreadDemo > result_thread_demo.txt 2>&1\ncat result_thread_demo.txt
+nano RunnableDemo.java
+ls -l RunnableDemo.java
+javac RunnableDemo.java
+java RunnableDemo > result_runnable_demo.txt 2>&1\ncat result_runnable_demo.txt
+nano PoolDemo.java
+ls -l PoolDemo.java
+javac PoolDemo.java
+java PoolDemo > result_pool_demo.txt 2>&1\ncat result_pool_demo.txt
